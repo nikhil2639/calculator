@@ -36,6 +36,9 @@ function updateDisplay(value){
 
 function inputNumber(number){
   if(shouldResetDisplay){
+    firstNumber ="";
+      secondNumber = "";
+      operator = "";
     currentNumber = "";
     shouldResetDisplay = false;
   }
@@ -159,7 +162,7 @@ buttons.forEach(button => {
     }
     else if(value === '+' || value === '-' || value === '*' || value === '/'){
               inputOperator(value);
-              updateDisplay(value);
+            
              }
     else if(value === "="){
       calculateResult();
